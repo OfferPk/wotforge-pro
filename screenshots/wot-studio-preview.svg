@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913"/>
+      <stop offset="100%" stop-color="#0c1326"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#9d4edd"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg-grad)"/>
+
+  <!-- Window Header / Frame -->
+  <rect x="40" y="30" width="1120" height="640" rx="12" fill="#0c1326" stroke="#1d2f55" stroke-width="1.5" filter="url(#shadow)"/>
+  
+  <!-- Window Controls -->
+  <circle cx="70" cy="55" r="6" fill="#ff5f56"/>
+  <circle cx="90" cy="55" r="6" fill="#ffbd2e"/>
+  <circle cx="110" cy="55" r="6" fill="#27c93f"/>
+  <text x="140" y="60" fill="#8d9fb8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">WoTForge Pro — W3C Web of Things (WoT) Thing Description 1.1 Studio</text>
+
+  <!-- Top App Navigation / Badges -->
+  <line x1="40" y1="80" x2="1160" y2="80" stroke="#1d2f55" stroke-width="1"/>
+  
+  <!-- Logo & Title -->
+  <rect x="70" y="100" width="80" height="34" rx="6" fill="url(#accent-grad)"/>
+  <text x="76" y="123" fill="#000" font-family="monospace" font-size="13" font-weight="800">WoT TD</text>
+  <text x="165" y="118" fill="#f0f4fc" font-family="sans-serif" font-size="18" font-weight="700">WoTForge Pro</text>
+  <text x="165" y="134" fill="#8d9fb8" font-family="sans-serif" font-size="12">W3C Web of Things (WoT) Thing Description 1.1 Studio &amp; OpenAPI 3.0 Bridge</text>
+
+  <!-- Tags -->
+  <rect x="880" y="104" width="110" height="24" rx="4" fill="rgba(0, 229, 255, 0.15)" stroke="#00e5ff" stroke-width="1"/>
+  <text x="892" y="120" fill="#00e5ff" font-family="sans-serif" font-size="11" font-weight="600">W3C Rec 1.1</text>
+  
+  <rect x="1000" y="104" width="110" height="24" rx="4" fill="rgba(0, 230, 118, 0.15)" stroke="#00e676" stroke-width="1"/>
+  <text x="1012" y="120" fill="#00e676" font-family="sans-serif" font-size="11" font-weight="600">10/10 PASS</text>
+
+  <!-- Metrics Grid -->
+  <rect x="70" y="155" width="150" height="50" rx="6" fill="#121e3a" stroke="#1d2f55"/>
+  <text x="85" y="172" fill="#8d9fb8" font-family="sans-serif" font-size="10" font-weight="700">TOTAL AFFORDANCES</text>
+  <text x="85" y="194" fill="#00e5ff" font-family="sans-serif" font-size="16" font-weight="800">4 Items</text>
+
+  <rect x="235" y="155" width="150" height="50" rx="6" fill="#121e3a" stroke="#1d2f55"/>
+  <text x="250" y="172" fill="#8d9fb8" font-family="sans-serif" font-size="10" font-weight="700">PROTOCOL BINDINGS</text>
+  <text x="250" y="194" fill="#c084fc" font-family="sans-serif" font-size="16" font-weight="800">HTTP + CoAP + MQTT</text>
+
+  <rect x="400" y="155" width="150" height="50" rx="6" fill="#121e3a" stroke="#1d2f55"/>
+  <text x="415" y="172" fill="#8d9fb8" font-family="sans-serif" font-size="10" font-weight="700">W3C COMPLIANCE</text>
+  <text x="415" y="194" fill="#00e676" font-family="sans-serif" font-size="16" font-weight="800">VERIFIED (100%)</text>
+
+  <!-- Main Left Card: Parameters -->
+  <rect x="70" y="220" width="500" height="420" rx="8" fill="#121e3a" stroke="#1d2f55" stroke-width="1"/>
+  <text x="90" y="248" fill="#f0f4fc" font-family="sans-serif" font-size="14" font-weight="700">Thing Description Affordance Configuration</text>
+
+  <text x="90" y="280" fill="#8d9fb8" font-family="sans-serif" font-size="11" font-weight="600">THING TITLE</text>
+  <rect x="90" y="290" width="460" height="34" rx="4" fill="#080d1c" stroke="#1d2f55"/>
+  <text x="102" y="312" fill="#00e5ff" font-family="monospace" font-size="12">Smart Industrial Chiller</text>
+
+  <text x="90" y="345" fill="#8d9fb8" font-family="sans-serif" font-size="11" font-weight="600">GLOBAL IDENTIFIER (ID URN)</text>
+  <rect x="90" y="355" width="460" height="34" rx="4" fill="#080d1c" stroke="#1d2f55"/>
+  <text x="102" y="377" fill="#f0f4fc" font-family="monospace" font-size="12">urn:factory:chiller:hvac-unit-04</text>
+
+  <text x="90" y="410" fill="#8d9fb8" font-family="sans-serif" font-size="11" font-weight="600">SECURITY DEFINITIONS SCHEME</text>
+  <rect x="90" y="420" width="460" height="34" rx="4" fill="#080d1c" stroke="#1d2f55"/>
+  <text x="102" y="442" fill="#c084fc" font-family="monospace" font-size="11">apikey (X-API-Key Header Authentication)</text>
+
+  <text x="90" y="475" fill="#8d9fb8" font-family="sans-serif" font-size="11" font-weight="600">BASE ENDPOINT IRI</text>
+  <rect x="90" y="485" width="460" height="34" rx="4" fill="#080d1c" stroke="#1d2f55"/>
+  <text x="102" y="507" fill="#f0f4fc" font-family="monospace" font-size="11">https://edge.factory.corp:8443</text>
+
+  <rect x="90" y="540" width="220" height="36" rx="6" fill="#00e5ff"/>
+  <text x="110" y="563" fill="#000" font-family="sans-serif" font-size="12" font-weight="700">Generate Thing Description</text>
+
+  <!-- Main Right Card: Dissected Structure & Hex Viewer -->
+  <rect x="590" y="220" width="530" height="420" rx="8" fill="#03060c" stroke="#1d2f55" stroke-width="1"/>
+  <text x="610" y="248" fill="#8d9fb8" font-family="sans-serif" font-size="12" font-weight="600">CANONICAL W3C THING DESCRIPTION (JSON-LD)</text>
+  <line x1="590" y1="260" x2="1120" y2="260" stroke="#1d2f55" stroke-width="1"/>
+
+  <g font-family="monospace" font-size="11" fill="#9cdcfe">
+    <text x="610" y="285">{</text>
+    <text x="630" y="305"><tspan fill="#4ec9b0">"@context"</tspan>: [ <tspan fill="#ce9178">"https://www.w3.org/2022/wot/td/v1.1"</tspan> ],</text>
+    <text x="630" y="325"><tspan fill="#4ec9b0">"@type"</tspan>: <tspan fill="#ce9178">"Thing"</tspan>,</text>
+    <text x="630" y="345"><tspan fill="#4ec9b0">"id"</tspan>: <tspan fill="#ce9178">"urn:factory:chiller:hvac-unit-04"</tspan>,</text>
+    <text x="630" y="365"><tspan fill="#4ec9b0">"title"</tspan>: <tspan fill="#ce9178">"Smart Industrial Chiller"</tspan>,</text>
+    <text x="630" y="385"><tspan fill="#4ec9b0">"security"</tspan>: [ <tspan fill="#ce9178">"api_key_sc"</tspan> ],</text>
+    <text x="630" y="405"><tspan fill="#4ec9b0">"properties"</tspan>: {</text>
+    <text x="650" y="425"><tspan fill="#4ec9b0">"chilled_water_temp_c"</tspan>: { <tspan fill="#4ec9b0">"type"</tspan>: <tspan fill="#ce9178">"number"</tspan>, <tspan fill="#4ec9b0">"unit"</tspan>: <tspan fill="#ce9178">"om:degC"</tspan> }</text>
+    <text x="630" y="445">},</text>
+    <text x="630" y="465"><tspan fill="#4ec9b0">"actions"</tspan>: { <tspan fill="#4ec9b0">"emergency_shutdown"</tspan>: { ... } },</text>
+    <text x="630" y="485"><tspan fill="#4ec9b0">"events"</tspan>: { <tspan fill="#4ec9b0">"refrigerant_leak_alert"</tspan>: { ... } }</text>
+    <text x="610" y="505">}</text>
+  </g>
+
+  <!-- Live Audit Badge -->
+  <rect x="610" y="540" width="490" height="34" rx="4" fill="rgba(0, 230, 118, 0.1)" stroke="#00e676" stroke-width="1"/>
+  <text x="625" y="562" fill="#00e676" font-family="sans-serif" font-size="12" font-weight="700">✓ W3C WoT Thing Description 1.1 Audit: 10/10 PASS (100% Compliant)</text>
+</svg>
